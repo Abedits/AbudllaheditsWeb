@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah Edits | Video Editor Portfolio</title>
+
+    <meta name="description" content="Abdullah Fazal is a video editor specializing in YouTube, TikTok, Instagram reels, and cinematic edits. Explore his latest projects and tools.">
+    <meta name="keywords" content="Abdullah Edits, Abdullah Fazal, Video Editor, YouTube Edits, TikTok Edits, Instagram Reels, Cinematic Edits, Premiere Pro, After Effects, DaVinci Resolve, Abdullah Portfolio, Abdullah Video Editing">
+    <meta name="author" content="Abdullah Fazal">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #0f0f0f, #1b1b1b);
+            color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav {
+            background: #0e0e0e;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+            nav ul {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                gap: 30px;
+                flex-wrap: wrap;
+            }
+
+                nav ul li a {
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    transition: color 0.3s ease;
+                }
+
+                    nav ul li a:hover {
+                        color: #ff0066;
+                    }
+
+        .hero {
+            padding: 120px 20px;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1581090700227-1e8e1eae4d52?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+            .hero h1 {
+                font-size: 3.5rem;
+                color: #ffffff;
+            }
+
+                .hero h1 span {
+                    color: #ff0066;
+                }
+
+            .hero p {
+                margin-top: 10px;
+                font-size: 1.2rem;
+                color: #ccc;
+            }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background-color: #ff0066;
+            color: #fff;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #e6005c;
+                transform: scale(1.05);
+            }
+
+        .skills {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+            .skills h2 {
+                font-size: 2.8rem;
+                margin-bottom: 50px;
+            }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .tool {
+            background-color: #1f1f1f;
+            border-radius: 12px;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 20px rgba(255,0,102,0.1);
+        }
+
+            .tool:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 30px rgba(255,0,102,0.3);
+            }
+
+            .tool img {
+                width: 80px;
+                height: 80px;
+                object-fit: contain;
+            }
+
+            .tool p {
+                margin-top: 15px;
+                font-weight: 600;
+                color: #ff66a3;
+            }
+
+        .work-section {
+            padding: 80px 20px;
+            background: #111;
+        }
+
+            .work-section h2 {
+                text-align: center;
+                font-size: 2.8rem;
+                margin-bottom: 50px;
+                color: #fff;
+            }
+
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .socials {
+            background: #141414;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+            .socials h2 {
+                font-size: 2.5rem;
+                margin-bottom: 40px;
+            }
+
+        .contact {
+            padding: 80px 20px;
+            text-align: center;
+            background: #111;
+        }
+
+            .contact h2 {
+                font-size: 2.8rem;
+                margin-bottom: 50px;
+                color: #fff;
+            }
+
+            .contact p {
+                font-size: 1.2rem;
+                color: #ccc;
+                margin-bottom: 20px;
+            }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .icon {
+            font-size: 4rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+            .icon:hover {
+                transform: scale(1.3) rotate(10deg);
+            }
+
+            .icon.github {
+                color: #ffffff;
+            }
+
+            .icon.youtube {
+                color: #ff0000;
+            }
+
+            .icon.instagram {
+                color: #e1306c;
+            }
+
+            .icon.tiktok {
+                color: #00f2ea;
+            }
+
+            .icon.twitter {
+                color: #1da1f2;
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0e0e0e;
+            color: #888;
+        }
+
+        @media (max-width:600px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .skills h2, .socials h2, .work-section h2, .contact h2 {
+                font-size: 2rem;
+            }
+
+            .tool {
+                width: 120px;
+            }
+
+            .icon {
+                font-size: 3rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        .hero-content {
+            animation: fadeInHero 1s ease-out forwards;
+        }
+
+        .fade-slide {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeSlideUp 0.8s ease-out forwards;
+        }
+
+            .fade-slide.delay-1 {
+                animation-delay: 0.4s;
+            }
+
+            .fade-slide.delay-2 {
+                animation-delay: 0.8s;
+            }
+
+        @keyframes fadeSlideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #ffffff;
+            line-height: 1.2;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+            .hero h1 span {
+                color: #ff0066;
+                font-weight: bold;
+            }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #ccc;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#socials">Socials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav><section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="fade-slide">Hi, I'm <span>Abdullah Fazal</span><br />Editor</h1>
+            <p class="fade-slide delay-1">Crafting visual stories with motion & precision.</p>
+            <a href="https://github.com/YOUR-GITHUB-USERNAME" class="btn fade-slide delay-2" target="_blank">View My GitHub</a>
+        </div>
+    </section>
+
+
+    <section class="skills" id="skills">
+        <h2>Editing Tools I Use</h2>
+        <div class="tools">
+            <div class="tool">
+                <img src="https://img.icons8.com/color/96/adobe-premiere-pro.png" alt="Premiere Pro" />
+                <p>Premiere Pro</p>
+            </div>
+            <div class="tool">
+                <img src="https://img.icons8.com/color/96/adobe-after-effects.png" alt="After Effects" />
+                <p>After Effects</p>
+            </div>
+            <div class="tool">
+                <img src="https://img.icons8.com/color/96/000000/davinci-resolve.png" alt="DaVinci Resolve" />
+                <p>DaVinci Resolve</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-section" id="work">
+        <h2>YouTube Videos</h2>
+        <div class="videos">
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/VIDEO_ID_3" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="work-section" id="tiktok-work">
+        <h2>TikTok Videos</h2>
+        <section class="work-section" id="tiktok-work">
+            <h2>TikTok Videos</h2>
+            <div class="videos">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@keya_ep/video/7544068495726742802" data-video-id="7544068495726742802" style="max-width: 605px;min-width: 325px;">
+                    <section><a target="_blank" title="@keya_ep" href="https://www.tiktok.com/@keya_ep">@keya_ep</a></section>
+                </blockquote>
+
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@keya_ep/video/7538427105051299080" data-video-id="7538427105051299080" style="max-width: 605px;min-width: 325px;">
+                    <section><a target="_blank" title="@keya_ep" href="https://www.tiktok.com/@keya_ep">@keya_ep</a></section>
+                </blockquote>
+
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@keya_ep/video/7311531407434632454" data-video-id="7311531407434632454" style="max-width: 605px;min-width: 325px;">
+                    <section><a target="_blank" title="@keya_ep" href="https://www.tiktok.com/@keya_ep">@keya_ep</a></section>
+                </blockquote>
+
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@keya_ep/video/7313179539796921606" data-video-id="7313179539796921606" style="max-width: 605px;min-width: 325px;">
+                    <section><a target="_blank" title="@keya_ep" href="https://www.tiktok.com/@keya_ep">@keya_ep</a></section>
+                </blockquote>
+            </div>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+        </section>
+
+        <section class="work-section" id="instagram-work">
+            <h2>Instagram Reels</h2>
+            <div class="videos">
+                <iframe src="https://www.instagram.com/reel/DN8nwv3CeXN/embed" width="320" height="440" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="socials" id="socials">
+            <h2>Connect with Me</h2>
+            <div class="icons">
+                <a href="https://github.com/YOUR-GITHUB-USERNAME" class="icon github" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://youtube.com/YOUR-YOUTUBE" class="icon youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/YOUR-INSTAGRAM" class="icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/@YOUR-TIKTOK" class="icon tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://twitter.com/YOUR-TWITTER" class="icon twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>Interested in collaborating? Reach out to discuss your project!</p>
+            <a href="mailto:your.email@example.com" class="btn">Get in Touch</a>
+        </section>
+
+        <footer>
+            <p>© 2025 Video Editor. All rights reserved.</p>
+        </footer>
+</body>
+</html>
